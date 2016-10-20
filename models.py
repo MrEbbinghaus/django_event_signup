@@ -3,9 +3,10 @@ from django.db import models
 
 
 class Event(models.Model):
-    date = models.DateField(blank=False)
     name = models.CharField(blank=False, max_length=64)
+    date = models.DateField(blank=False)
     location = models.TextField(blank=True)
+    description = models.TextField(blank=True)
 
     class Meta:
         get_latest_by = 'date'
