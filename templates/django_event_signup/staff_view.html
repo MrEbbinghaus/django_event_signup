@@ -1,0 +1,16 @@
+{% extends "base_nav.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-6">
+    <li>
+      {% for entry in entries %}
+        <ul>{{ entry }}</ul>
+      {% empty %}
+        <p>Keiner möchte teilnehmen. :-(</p>
+      {% endfor %}
+    </li>
+    </div>
+  </div>
+{% endblock %}

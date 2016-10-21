@@ -1,0 +1,13 @@
+{% extends "base_nav.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-6">
+      <h1>{{ event.name }}</h1>
+      <p>{{ event.date }} {{ event.location }}</p>
+      <p>{{ event.description }}</p>
+      <button class="btn btn-primary">Da will ich mitmachen!</button>
+    </div>
+  </div>
+{% endblock %}
