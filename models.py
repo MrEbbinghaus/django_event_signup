@@ -13,7 +13,7 @@ class Event(models.Model):
 
     def __str__(self):
         display = "{0} am {1}"
-        return display.format(self.user, self.event)
+        return display.format(self.name, self.date)
 
 
 class Participant(models.Model):

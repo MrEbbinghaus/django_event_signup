@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     # your routing urls here
-    # url(r'^event/post/enter/otp/$', views.enter_otp, name='enter_otp'),
-    # url(r'^event/(?P<event_id>[0-9]+)', views.shift_schedule_event, name='shift_schedule_event'),
+    url(r'^(?P<event_id>[0-9]+)$', views.event_view, name='event_view'),
+    url(r'^staff/(?P<event_id>[0-9]+)$', views.staff_view, name='staff_view'),
 ]
