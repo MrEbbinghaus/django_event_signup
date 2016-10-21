@@ -1,4 +1,4 @@
-# EventShiftSchedule
+# django_event_signup
 
 This is a Django app to provide a simple shift schedule. E.g. for partys!
 you _need_ to place this inside your Django project folder and configure it correctly!
